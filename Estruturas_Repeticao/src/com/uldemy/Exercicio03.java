@@ -6,7 +6,7 @@ public class Exercicio03 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int entradaCliente = 0;
+        int entradaCliente;
         int alcool = 0, gasolina = 0, diesel = 0;
 
         do {
