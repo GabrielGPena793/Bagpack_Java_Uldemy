@@ -3,17 +3,15 @@ package com.uldemy.application;
 import com.uldemy.entities.Employee;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
 public class MainEmployee {
 
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
-        List<Employee> employees = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
+        List<Employee> employees = new ArrayList<>();
 
         System.out.print("How many employees will be registered? ");
-        int quantityEmployees =  scanner.nextInt();
+        int quantityEmployees = scanner.nextInt();
         System.out.println();
 
         for (int i = 0; i < quantityEmployees; i++){
