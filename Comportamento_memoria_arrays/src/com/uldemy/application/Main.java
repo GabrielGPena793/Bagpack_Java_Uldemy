@@ -1,4 +1,4 @@
-package com.uldemy;
+package com.uldemy.application;
 
 import com.uldemy.entities.Estudante;
 import com.uldemy.entities.Quarto;
