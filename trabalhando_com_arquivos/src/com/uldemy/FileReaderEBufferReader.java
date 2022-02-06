@@ -7,7 +7,6 @@ import java.io.IOException;
 public class FileReaderEBufferReader {
 
     public static void main(String[] args) {
-        //forma básica para ver o processo manual
 
         String path = "c:\\temp\\in.txt";
 
