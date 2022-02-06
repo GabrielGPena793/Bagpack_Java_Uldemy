@@ -1,7 +1,6 @@
 package com.uldemy;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -11,12 +10,8 @@ public class FileReaderEBufferReader {
         //forma básica para ver o processo manual
 
         String path = "c:\\temp\\in.txt";
-        FileReader fr = null;
-        BufferedReader br = null;
 
-        try {
-            fr = new FileReader(path);
-            br = new BufferedReader(fr); // deixa mais rapido a leitura
+        try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
             String line = br.readLine();
 
@@ -24,21 +19,9 @@ public class FileReaderEBufferReader {
                 System.out.println(line);
                 line = br.readLine();
             }
+
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
-        }
-        finally {
-            try {
-                if (br != null){
-                    br.close();
-                }
-                if (fr != null){
-                    fr.close();
-                }
-            }
-            catch (IOException e){
-                e.printStackTrace();
-            }
         }
 
     }
