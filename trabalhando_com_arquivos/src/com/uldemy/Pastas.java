@@ -32,7 +32,5 @@ public class Pastas {
         boolean sucess = new File(strPath + "\\subdir").mkdir();
         System.out.println("Directory created sucessfully: " + sucess);
 
-
-
     }
 }
