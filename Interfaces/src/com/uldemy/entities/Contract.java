@@ -48,4 +48,8 @@ public class Contract {
     public List<Installment> getInstallments() {
         return installments;
     }
+
+    public void addInstallment(Installment installment){
+        installments.add(installment);
+    }
 }
